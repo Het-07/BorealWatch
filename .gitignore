@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data artifacts
+# Keep empty directory structure via .gitkeep files.
+data/raw/*
+!data/raw/**/.gitkeep
+data/bronze/*
+!data/bronze/**/.gitkeep
+data/silver/*
+!data/silver/**/.gitkeep
+data/gold/*
+!data/gold/**/.gitkeep
+
+# Spark / Databricks local artifacts
+.sparkStaging/
+spark-warehouse/
+metastore_db/
+
+# Logs and local outputs
+*.log
+logs/
+outputs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Tableau / BI local artifacts
+*.twb.lock
+*.twbx.lock
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+override.tf
+override.tf.json
+.terraformrc
+terraform.rc

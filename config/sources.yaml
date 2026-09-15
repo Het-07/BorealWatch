@@ -1,0 +1,30 @@
+sources:
+  wildfire:
+    name: "Canadian Wildfire Data"
+    format: "csv"
+    enabled: true
+    description: "Canadian wildfire observations and records"
+
+  weather:
+    name: "Canadian Weather Data"
+    format: "csv"
+    enabled: false
+    description: "Historical Canadian weather observations"
+
+  air_quality:
+    name: "Canadian Air Quality Data"
+    format: "csv"
+    enabled: false
+    description: "Canadian air quality observations"
+
+  drought:
+    name: "Canadian Drought Data"
+    format: "csv"
+    enabled: false
+    description: "Canadian drought and environmental indicators"
+
+  satellite:
+    name: "Satellite Environmental Data"
+    format: "raster"
+    enabled: false
+    description: "Satellite-derived environmental observations"

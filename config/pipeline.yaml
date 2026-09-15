@@ -1,0 +1,16 @@
+pipeline:
+  name: "borealwatch_batch_pipeline"
+
+  layers:
+    raw: "data/raw"
+    bronze: "data/bronze"
+    silver: "data/silver"
+    gold: "data/gold"
+
+  processing:
+    engine: "pyspark"
+
+  quality:
+    fail_on_schema_error: true
+    fail_on_duplicate_records: false
+    fail_on_null_required_fields: true
